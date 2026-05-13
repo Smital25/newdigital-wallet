@@ -15,7 +15,7 @@ import {
 
 ChartJS.register(ArcElement, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement, Filler);
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://newdigital-wallet.onrender.com";
 
 const CATEGORY_COLORS = {
   Food: "#2ECC71",
