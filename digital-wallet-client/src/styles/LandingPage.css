@@ -1,0 +1,172 @@
+.bg-gradient-green {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #198754, #28a745);
+}
+
+.feature-icon {
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.animate-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Centers horizontally */
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+
+.hero-section {
+  display: flex;
+  align-items: center; /* ✅ Vertically center */
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
+.floating-bg::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background-image: url('/path/to/currency-icons.svg');
+  background-size: contain;
+  animation: floatBg 30s linear infinite;
+  opacity: 0.05;
+}
+
+@keyframes floatBg {
+  from { transform: translate(0,0); }
+  to { transform: translate(-200px,-200px); }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-glow {
+  background: #00ff99;
+  color: #000;
+  border: none;
+  box-shadow: 0 0 15px #00ff99;
+  transition: 0.3s;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 25px #00ff99;
+}
+
+.transaction {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.hero-gif {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* TEXT STYLING */
+.text-shadow {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON HOVER EFFECT */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* FEATURE ICONS */
+.feature-icon {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* CARD CONTENT CENTERING */
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
